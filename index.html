@@ -1,25 +1,157 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Michelle's Portfolio</title>
+<head>  <title>Michelle's Portfolio</title>
   <link rel="icon" type="image/png" href="Favicon.png"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Paytone One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <style>
-    body {text-align: center;font-family: trebuchet ms;background-color: #E8C0DA}
+    body {
+      background: url(https://i.gifer.com/76YS.gif);
+      
+    }
+
+    p{
+    font-size: 14px !important;
+    font-weight: bold;
+    color: #ffedf9;
+    font-family: 'Roboto';
+    text-shadow:0px 0px 15px #444444a5; 
+    }
+
+    h1{
+    font-size: 35px;
+    font-family: 'Paytone One', sans-serif;	
+    text-transform:uppercase !important;
+    padding-left: 2px !important;
+    color:#ff97c1;
+    text-align: center;
+    text-shadow:0px 0px 15px #444444da; 
+    }
+
+    h2{
+    font-size: 20px !important;
+    font-family: 'Paytone One', sans-serif;	
+    text-transform:uppercase !important;
+    padding-left: 2px !important;
+    color:#ffedf9;
+    text-align: center;
+    text-shadow:0px 0px 15px #444444da; 
+    }
+
+    /*the main textbox styling*/
+    .textbox {
+    background: rgba(189, 124, 207, 0.4);
+    border-radius:15px;
+    border: 2px dashed rgba(241, 190, 255, 0.6);
+    margin: 30px 100px 70px 100px;
+    min-height: 600px;
+    }
+
+    .navbar {
+      background-color: rgba(189, 124, 207, 0.498);
+      font-family:'Roboto';
+      font-weight: bold;
+      color:white;
+      text-shadow:0px 0px 15px #444444a5;
+    }
+
+    table, th, td {
+    border: 4px solid #503454;
+    }
+
+    th {
+  background-color: rgba(137, 76, 175, 0.358);
+  color: white;
+  font-size: 20px;
+  font-family: 'Paytone One', sans-serif;	
+  text-transform:uppercase !important;
+    }
+
+    td {
+    background-color: rgba(223, 162, 210, 0.507);
+    color: black;
+    font-weight: bold;
+    font-family: 'Roboto';
+    max-width: 100px;
+    vertical-align: center;
+    }
+    
   </style>
 </head>
+
 <body>
-  <h1>Michelle's Portfolio - ICS3</h1>
-  <hr>
-  <p style="color:hotpink";">Homepage :D</p>
-  <a href="UsefulBookmarks.html">Useful Bookmarks</a>
-  <br>
-  <br>
-  <a href="ClassProjects.html">Class Projects</a>
-  <br>
-  <br>
-  <a href="WeeklyJournal.html">Weekly Journal</a>
-  <br>
-  <br>
-  <img src="blob.gif" alt="gif" style="width:300px;height:300px;">
+  <!--navbar-->
+  <div class="navbar">
+    <div class="w3-bar w3-card-4 w3-padding-14">
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-16" class=active>Home</a>
+      <a href="UsefulBookmarks.html" class="w3-bar-item w3-button w3-padding-16" class=active>Useful Bookmarks</a>
+      <a href="ClassProjects.html" class="w3-bar-item w3-button w3-padding-16">Class Projects</a>
+      <a href="WeeklyJournal.html" class="w3-bar-item w3-button w3-padding-16">Weekly Journal</a>
+      <span class="w3-bar-item w3-right w3-padding-16" style="margin-right: 250px">ICS3U - Semester 1
+    </div>
+  </div>
+    
+  <h1>My Portfolio</h1>
+
+<!--this is the main textbox-->
+<div class="textbox">
+  
+  <!--1st half-->
+  <div class="w3-col w3-left" style="width:400px;">
+
+    <div style="margin-left:20px; margin-top: 20px;">
+      <h1 style="text-align: left; font-size: 32px;" >Michelle Villarroel</h1>
+      <!--profile picture-->
+      <div style="background-color: rgba(52, 24, 37, 0.635); margin: 0px 0px 10px 0px; width:220px; height: 220px; border: 2px dashed  rgba(255, 161, 206, 0.785);
+        box-shadow: 1px 0px 10px 2px rgba(254, 120, 180, 0.46);">
+        <img style="max-height: 220px;" src="images/avatar.png" alt="pfp">
+      </div>
+    </div>
+
+
+<table class="w3-table w3-centered w3-card-4 w3-border" style="background-color: rgba(171, 118, 207, 0.4); margin-left: auto; margin-right: auto;; max-width: 1000px;">
+<th>My Interests</th>
+</table>
+
+  <table class="w3-table w3-card-4 w3-border" style="background-color: rgba(223, 162, 210, 0.58); margin-left: auto; margin-right: auto;; max-width: 1000px;">
+      <tr>
+        <td>Food</td>
+        <td>Chocolate</td>
+      </tr>
+
+      <tr>
+        <td>Movies</td>
+        <td>Chocolate</td>
+      </tr>
+
+      <tr>
+        <td>Music</td>
+        <td>Chocolate</td>
+      </tr>
+
+      <tr>
+        <td>Books</td>
+        <td>Chocolate</td>
+      </tr>
+
+    </table>
+    </div>
+
+      <!--2nd half of site-->
+      <div class="w3-col w3-right" style="width:600px">
+        <div style="margin-right: 25px; margin-top: 25px;">
+          <p>This website is part of my RST for my Grade 11 Intro to Computer Science class. Here, I have compiled my previous projects and a journal of what we did every week. </p>
+          
+          <!--about me box-->
+          <div class="w3-card-4" style="margin-top: 40px; background-color: rgba(171, 118, 207, 0.4); border-radius:35px; border: 2px solid rgba(218, 165, 255, 0.65)">
+            <h2 style="margin:0px 3px 0px 3px;" >About Me</h2>
+          </div>
+        </div>
+      </div>
+</div>
+
 </body>
 </html>
+
+<!-- <img src="blob.gif" alt="gif" style="width:300px;height:300px;">
