@@ -1,38 +1,245 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <div class="topnav">
-    <a class="active" href="index.html">Home</a>
-  <title>Class Project</title>
-   <link rel="icon" type="image/png" href="Favicon.png"/>
+<head>  <title>Weekly Journal</title>
+  <link rel="icon" type="image/png" href="Favicon.png"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Paytone One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <style>
-    body {text-align: center; font-family: trebuchet ms; background-color: #E8C0DA;}
+    body {
+      background: url(https://i.gifer.com/76YS.gif);
+      
+    }
+
+    p,a{
+    font-size: 14px !important;
+    font-weight: bold;
+    color: #ffedf9;
+    font-family: 'Roboto';
+    text-shadow:0px 0px 15px #444444a5; 
+    }
+
+    h1{
+    font-size: 35px;
+    font-family: 'Paytone One', sans-serif;	
+    text-transform:uppercase !important;
+    padding-left: 2px !important;
+    color:#ff97c1;
+    text-align: center;
+    text-shadow:0px 0px 15px #444444da; 
+    }
+
+    h2{
+    font-size: 20px !important;
+    font-family: 'Paytone One', sans-serif;	
+    text-transform:uppercase !important;
+    padding-left: 2px !important;
+    color:#ffedf9;
+    text-align: center;
+    text-shadow:0px 0px 15px #444444da; 
+    }
+
+    /*the main textbox styling*/
+    .textbox {
+    background: rgba(189, 124, 207, 0.4);
+    border-radius:15px;
+    border: 2px dashed rgba(241, 190, 255, 0.6);
+    margin: 30px 100px 70px 100px;
+    min-height: 600px;
+    min-width: 1000px;
+    }
+
+    .navbar {
+      background-color: rgba(189, 124, 207, 0.498);
+      font-family:'Roboto';
+      font-weight: bold;
+      color:white;
+      text-shadow:0px 0px 15px #444444a5;
+    }
+
+    button {
+      font-family:'Roboto';
+      font-weight: bold;
+      color:white;
+      text-shadow:0px 0px 15px #444444a5;
+    }
+
+    table, th, td {
+    border: 4px solid #503454;
+    }
+
+    th {
+  background-color: rgba(137, 76, 175, 0.358);
+  color: white;
+  font-size: 20px;
+  font-family: 'Paytone One', sans-serif;	
+  text-transform:uppercase !important;
+    }
+
+    td {
+    background-color: rgba(223, 162, 210, 0.507);
+    color: black;
+    font-weight: bold;
+    font-family: 'Roboto';
+    max-width: 100px;
+    vertical-align: center;
+    }
+    
   </style>
 </head>
+
 <body>
-  <h1>Class Projects</h1>
-  <hr>
-  <br>
-  <a href="https://drive.google.com/file/d/1k2wTome8OYRaAnRYa3GQm-m-ynFTaPny/view?usp=sharing">Alan Turing Video</a>
+  <!--navbar-->
+  <div class="navbar">
+    <div class="w3-bar w3-card-4 w3-padding-14">
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-16" class=active>Home</a>
+      <a href="UsefulBookmarks.html" class="w3-bar-item w3-button w3-padding-16" class=active>Useful Bookmarks</a>
+      <a href="ClassProjects.html" class="w3-bar-item w3-button w3-padding-16">Class Projects</a>
+      <a href="WeeklyJournal.html" class="w3-bar-item w3-button w3-padding-16">Weekly Journal</a>
+      <span class="w3-bar-item w3-right w3-padding-16" style="margin-right: 250px">ICS3U - Semester 1
+    </div>
+  </div>
+
+  <!--tabs-->
+    <!--buttons for all the projects-->
+  <div class="w3-bar w3-white">
+    <button class="w3-bar-item w3-button tablink w3-purple" onclick="openProject(event,'alan-turing')">Alan Turing</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openProject(event,'c#')">C# Poster</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openProject(event,'canva')">Careers Canva</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openProject(event,'site')">Go Green Site</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openProject(event,'repl')">Replit Exercises</button>
+  </div>
+
+  <h1 style="margin-top: 32px; color:#ffedf9">Class Projects</h1>
+
+  <!--alan turing project-->
+  <div id="alan-turing" class="w3-container project" style="max-width: 2000px; margin-top: 20px; margin: auto;">
+    <div class="textbox">
+      <div style="margin:20px 20px 20px 20px">
+        <h1>⋆*･ﾟ:⋆*･ﾟ Alan Turing ⋆*･ﾟ:⋆*･ﾟ</h1>
+        <p>For this project, we had to choose from a list of significant people in computer science. My partner, Gabe, and I chose Alan Turing, 
+          often called the "father of computer science". He is known for his contributions to the idea of the personal computer, as well as his 
+          "Turing Test", which became the basis for AI. We made a Capcut video for our presentation and we also played a Kahoot we made with the class.</p> 
+          <div class="w3-container w3-center">
+            <a href="https://drive.google.com/file/d/1k2wTome8OYRaAnRYa3GQm-m-ynFTaPny/view?usp=sharing">Video Link</a>
+            <a href="https://play.kahoot.it/v2/?quizId=982f80d5-8f97-468c-ada2-761e1e473540">Kahoot Link</a> 
+          </div>
+          <div style="margin-top: 30px;"></div>
+            <div class="w3-card-4 w3-third">
+              <img src="images/turing1 (1).jpg" alt="Alan Turing" style="width:300px; height:247px;">
+            </div>
+
+            <div class="w3-card-4 w3-third">
+              <img src="images/turing2 (1).webp" alt="turing2" style="width:300px; height:247px;">
+            </div>
+
+            <div class="w3-card-4 w3-third">
+              <img src="images/turing3 (2).jpg" alt="turing3" style="width:300px; height:247px;">
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!--C# Poster-->
+  <div id="c#" class="w3-container project" style="display:none; max-width: 2000px; margin-top: 20px; margin: auto;">
+    <div class="textbox">
+      <div style="margin:20px 20px 20px 20px">
+        <h1>✧･ﾟ: *✧･ﾟ:* Languages of the World ✧･ﾟ: *✧･ﾟ:*</h1>
+        <p>For this project, we had to choose from a list of programming languages and make a poster about it. Gabe and I chose C# because
+          it's a popular language to develop video games on Unity, since we love video games. C# was used to make many popular games, such as 
+          Cuphead and Super Mario Run. Due to Super Mario Run, we themed the poster after Mario to make it eye-catching.</p>
+          <div class="w3-container w3-center" style="margin-top: 30px;">
+            <img src="images/poster.jpg" alt="C# Poster"width="75%" height="75%">
+          </div>
+      </div>
+    </div>
+  </div>
+
+    <!--from w3 schools, opens the tab when you click the button-->
+    <script>
+      function openProject(evt, projectName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("project");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-purple", "");
+        }
+        document.getElementById(projectName).style.display = "block";
+        evt.currentTarget.className += " w3-purple";
+      }
+      </script>
+
+  <!--Canva Careers-->
+  <div id="canva" class="w3-container project" style="display:none; max-width: 2000px; margin-top: 20px; margin: auto;">
+    <div class="textbox">
+      <div style="margin:20px 20px 20px 20px">
+        <h1>⋆⋅☆⋅⋆ Careers ⋆⋅☆⋅⋆</h1>
+        <p>For this project, we had to think about our future career in computer science and what university we'd want to go to. 
+        I chose computer engineering/mechatronics as my career because I'm interested in robotics and computer hardware. To show my research, 
+        I created a Canva infographic.</p> 
+          <div class="w3-container w3-center">
+            <a href="https://www.canva.com/design/DAFyYcqFL74/nRZ6RcZhpxWmG5baOUk49w/edit?utm_content=DAFyYcqFL74&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Canva Link</a>
+          </div>
+          <div style="margin-top: 30px;">
+            <div class="w3-card-4 w3-third">
+              <img src="images/Waterloo_1 (1).png" alt="waterloo" style="width:300px; height:247px;">
+            </div>
+
+            <div class="w3-card-4 w3-third">
+              <img src="images/compeng (1).jpg" alt="compeng" style="width:300px; height:247px;">
+            </div>
+
+            <div class="w3-card-4 w3-third">
+              <img src="images/compeng2 (1).png" alt="robot" style="width:300px; height:247px;">
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Website-->
+  <div id="site" class="w3-container project" style="display:none; max-width: 2000px; margin-top: 20px; margin: auto;">
+    <div class="textbox">
+      <div style="margin:20px 20px 20px 20px">
+        <h1>˗ˏˋ ♡ Go Green Website ♡ ˊˎ˗</h1>
+        <p>In this project, Mr. Jamieson assigned me to create the schools Go Green website, since I'm involved in the club. 
+          With the help of Mme. Beaupre and Ms. Lessard, I put in helpful information for anyone curious about our projects and what we do.
+        </p>
+        <div class="w3-container w3-center" style="margin-top: 30px;">
+          <img src="images/gogreenss.png" alt="gogreen site"width="85%" height="85%">
+        </div>
+      </div>
+    </div>
+  </div>
   
-  <br>
-  <br>
-  <a href="https://replit.com/@ics3u-sem-1/Exercises-Unit-1-MichelleVillar1">Unit 1 Exercises</a>
-  <br>
-  <br>
-  <a href="https://replit.com/@ics3u-sem-1/03-Practice-Part-2-If-and-strings-1-MichelleVillar1">Unit 2 Exercises</a>
-  <br>
-  <br>
-   <a href="https://replit.com/@ics3u-sem-1/02-Practice-If-and-Strings-MichelleVillar1">Continued Unit 2 Exercises</a>
-  <br>
-  <h3>C# Poster</h3>
-  <img src="poster.jpg" alt="C# Poster"width="300" height="250">
-  <br>
-  <br>
-  <a href="https://www.canva.com/design/DAFyYcqFL74/nRZ6RcZhpxWmG5baOUk49w/edit?utm_content=DAFyYcqFL74&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Careers Canva</a>
-  <br>
-  <br>
-  <a href="https://replit.com/@ics3u-sem-1/01-Lists-MichelleVillar1#main.py">Unit 3 Exercises</a>
+<!--replit exercises-->
+<div id="repl" class="w3-container project" style="display:none; max-width: 2000px; margin-top: 20px; margin: auto;">
+  <div class="textbox">
+    <div style="margin:20px 20px 20px 20px">
+      <h1>⋆*･ﾟ:⋆*･ﾟ Replit Exercises ⋆*･ﾟ:⋆*･ﾟ</h1>
+      <p style="text-align: center;">We had multiple replit assignments for each unit. Here are the links to them.</p>
+      <div class="w3-container w3-center">
+        <a href="https://replit.com/@ics3u-sem-1/Exercises-Unit-1-MichelleVillar1">Unit 1 Exercises</a>
+        <br>
+        <br>
+        <a href="https://replit.com/@ics3u-sem-1/03-Practice-Part-2-If-and-strings-1-MichelleVillar1">Unit 2 Exercises</a>
+        <br>
+        <br>
+        <a href="https://replit.com/@ics3u-sem-1/02-Practice-If-and-Strings-MichelleVillar1">Continued Unit 2 Exercises</a>
+        <br>
+        <br>
+        <a href="https://replit.com/@ics3u-sem-1/01-Lists-MichelleVillar1#main.py">Unit 3 Exercises</a>
+        <div style="margin-top: 30px;">
+          <img src="images/repl.png" alt="replit logo"width="50%" height="50%">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-
+</body>
 </html>
