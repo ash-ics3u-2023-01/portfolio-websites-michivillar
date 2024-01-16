@@ -48,7 +48,7 @@
     border-radius:15px;
     border: 2px dashed rgba(241, 190, 255, 0.6);
     margin: 30px 100px 70px 100px;
-    min-height: 600px;
+    min-height: 350px;
     min-width: 1000px;
     }
 
@@ -60,11 +60,16 @@
       text-shadow:0px 0px 15px #444444a5;
     }
 
-    button {
+    .button {
       font-family:'Roboto';
       font-weight: bold;
-      color:white;
+      color:#ffedf9;
       text-shadow:0px 0px 15px #444444a5;
+      width:170px; 
+      height:45px; 
+      background-color: rgba(171, 118, 207, 0.4); 
+      border-radius:35px; 
+      border: 2px solid rgba(218, 165, 255, 0.65);
     }
 
     table, th, td {
@@ -100,103 +105,133 @@
       <a href="UsefulBookmarks.html" class="w3-bar-item w3-button w3-padding-16" class=active>Useful Bookmarks</a>
       <a href="ClassProjects.html" class="w3-bar-item w3-button w3-padding-16">Class Projects</a>
       <a href="WeeklyJournal.html" class="w3-bar-item w3-button w3-padding-16">Weekly Journal</a>
-      <span class="w3-bar-item w3-right w3-padding-16" style="margin-right: 250px">ICS3U - Semester 1
+      <span class="w3-bar-item w3-right w3-padding-16" style="margin-right: 250px">ICS3U - 2023/24
     </div>
   </div>
 
   <h1>Weekly Journal</h1>
 
-<!--September Archive-->
-<center>
-  <button onclick="myFunction('sept')" class="w3-card-4 w3-btn" style="color: #ffedf9; width:170px; height:45px; background-color: rgba(171, 118, 207, 0.4); border-radius:35px; border: 2px solid rgba(218, 165, 255, 0.65)">September</button>
-</center>
-  <div id="sept" class="w3-container w3-hide">
-    <h2>Week of September 11</h2>
-    <p>This week, we learned print statements and input in python. We also did math exercises.</p>
-    <hr>
-    <h2>Week of September 18</h2>
-    <p>We worked on our presentations about important people in CompSci history. We designed an indigenous picture for Orange Shirt Day. Also, we learned about if statements.</p>
-    <hr>
-    <h2>Week of September 25</h2>
-    <p>We coded a Python robot game. We did replit exercises</p>
-    <hr>
-    <h2>Week of September 25</h2>
-    <p>We coded a Python robot game. We did replit exercises</p>
-    <hr>
-
-  </div>
-  
-  </div>
-  <script>
-  function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  </script>
-
-<br>
-
-  <!--October Archive-->
-<center>
-  <button onclick="myFunction('oct')" class="w3-card-4 w3-btn" style="color: #ffedf9; width:170px; height:45px; background-color: rgba(171, 118, 207, 0.4); border-radius:35px; border: 2px solid rgba(218, 165, 255, 0.65)">October</button>
-</center>
-  <div id="oct" class="w3-container w3-hide">
-    <h2>Week of October 2</h2>
-    <p>We learned about if statements and strings.</p>
-    <hr>
-    <h2>Week of October 9</h2>
-    <p>We continued with if and string exercises. Also, we had guest speakers from the government talk about Raspberry Pi and intelligence jobs.</p>
-    <hr>
-    <h2>Week of October 16</h2>
-    <p>Raspberry Pi had issues, we played Minecraft in class.</p>
-    <hr>
-    <h2>Week of October 23</h2>
-    <p>We worked on Languages of the World posters. Raspberry Pi didn't work again. We started our Computer Science Careers project.</p>
-    <hr>
-    <h2>Week of October 30</h2>
-    <p>We worked on CMU and did a Halloween Challenge. We learned about Lists in Python. I helped set up accounts on Raspberry Pi. </p>
-    <hr>
- 
-  </div>
-  
-  </div>
-  <script>
-  function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  </script>
-  
-<br>
-  
-  <!--November Archive-->
+<div class="textbox">
+  <!--September Archive-->
   <center>
-    <button onclick="myFunction('nov')" class="w3-card-4 w3-btn" style="color: #ffedf9; width:170px; height:45px; background-color: rgba(171, 118, 207, 0.4); border-radius:35px; border: 2px solid rgba(218, 165, 255, 0.65)">November</button>
+    <button onclick="myFunction('sept')" class="button w3-card-4 w3-btn" style="margin-top: 15px;">September</button>
   </center>
-    <div id="nov" class="w3-container w3-hide">
-      <h2>Week of Nov 6</h2>
-      <p>We worked on CMU until Unit 3, did CSE, and concatation. We also looked at for loops. Then, we had a PD Day.</p>
+    <div id="sept" class="w3-container w3-hide">
+      <h2>Week of September 11</h2>
+      <p>This week, we learned print statements and input in python. We also did math exercises.</p>
       <hr>
-      <h2>Week of Nov 13</h2>
-      <p>We did lists exercises and did the lists test. We also did lists on CS Circles.</p>
+      <h2>Week of September 18</h2>
+      <p>We worked on our presentations about important people in CompSci history. We designed an indigenous picture for Orange Shirt Day. Also, we learned about if statements.</p>
       <hr>
-      <h2>Week of Nov 20</h2>
-      <p>We did CMU, then we started looking at functions and did exercises.</p>
+      <h2>Week of September 25</h2>
+      <p>We coded a Python robot game. Then, we worked on Replit exercises about print and input.</p>
       <hr>
-      <h2>Week of Nov 27</h2>
-      <p>We kept working on CMU, then we finished doing our functions exercises on CodeHS.</p>
+
+    </div>
+  
+    <script>
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+
+  <br>
+
+    <!--October Archive-->
+  <center>
+    <button onclick="myFunction('oct')" class="button w3-card-4 w3-btn">October</button>
+  </center>
+    <div id="oct" class="w3-container w3-hide">
+      <h2>Week of October 2</h2>
+      <p>We learned about if statements and strings.</p>
+      <hr>
+      <h2>Week of October 9</h2>
+      <p>We continued with if and string exercises. Also, we had guest speakers from the government talk about Raspberry Pi and intelligence jobs.</p>
+      <hr>
+      <h2>Week of October 16</h2>
+      <p>Raspberry Pi had issues, so we played Minecraft in class.</p>
+      <hr>
+      <h2>Week of October 23</h2>
+      <p>We worked on Languages of the World posters. Raspberry Pi didn't work again. We started our Computer Science Careers project.</p>
+      <hr>
+      <h2>Week of October 30</h2>
+      <p>We worked on CMU and did a Halloween Challenge. We learned about Lists in Python. I helped set up accounts on Raspberry Pi. </p>
+      <hr>
+  
+    </div>
+    
+    
+    <script>
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+  
+  <br>
+    
+    <!--November Archive-->
+    <center>
+      <button onclick="myFunction('nov')" class="button w3-card-4 w3-btn">November</button>
+    </center>
+      <div id="nov" class="w3-container w3-hide">
+        <h2>Week of Nov 6</h2>
+        <p>We worked on CMU until Unit 3, did CSE, and concatation. We also looked at for loops. Then, we had a PD Day.</p>
+        <hr>
+        <h2>Week of Nov 13</h2>
+        <p>We did lists exercises and did the lists test. We also did lists on CS Circles.</p>
+        <hr>
+        <h2>Week of Nov 20</h2>
+        <p>We did CMU, then we started looking at functions and did exercises.</p>
+        <hr>
+        <h2>Week of Nov 27</h2>
+        <p>We kept working on CMU, then we finished doing our functions exercises on CodeHS.</p>
+        <hr>     
+      </div>
+      
+     
+      <script>
+      function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      </script>
+      
+    <br>
+
+  <!--December Archive-->
+  <center>
+    <button onclick="myFunction('dec')" class="button w3-card-4 w3-btn">December</button>
+  </center>
+    <div id="dec" class="w3-container w3-hide">
+      <h2>Week of Dec 4</h2>
+      <p>It was CompSci education week, so we played Minecraft. We also kept working on CMU.</p>
+      <hr>
+      <h2>Week of Dec 11</h2>
+      <p>We worked on CodeHS and tried to get to functions. We also worked on CMU to get to Unit 3.</p>
+      <hr>
+      <h2>Week of Dec 18</h2>
+      <p>We did some holiday challenges, like the christmas tree on Raspberry Pi and the christmas image on CMU.</p>
+      <hr>
+      <h2>Week of Dec 25</h2>
+      <p>🎄 Christmas! 🎄</p>
       <hr>     
     </div>
     
-    </div>
+   
     <script>
     function myFunction(id) {
       var x = document.getElementById(id);
@@ -210,65 +245,33 @@
     
   <br>
 
-<!--December Archive-->
-<center>
-  <button onclick="myFunction('dec')" class="w3-card-4 w3-btn" style="color: #ffedf9; width:170px; height:45px; background-color: rgba(171, 118, 207, 0.4); border-radius:35px; border: 2px solid rgba(218, 165, 255, 0.65)">December</button>
-</center>
-  <div id="dec" class="w3-container w3-hide">
-    <h2>Week of Dec 4</h2>
-    <p>It was CompSci education week, so we played Minecraft. We also kept working on CMU.</p>
-    <hr>
-    <h2>Week of Dec 11</h2>
-    <p>We worked on CodeHS and tried to get to functions. We also worked on CMU to get to Unit 3.</p>
-    <hr>
-    <h2>Week of Dec 18</h2>
-    <p>We did some holiday challenges, like the christmas tree on Raspberry Pi and the christmas image on CMU.</p>
-    <hr>
-    <h2>Week of Dec 25</h2>
-    <p>🎄 Christmas! 🎄</p>
-    <hr>     
-  </div>
+    <!--January Archive-->
+  <center>
+    <button onclick="myFunction('jan')" class="button w3-card-4 w3-btn">January</button>
+  </center>
+    <div id="jan" class="w3-container w3-hide">
+      <h2>Week of Jan 8</h2>
+      <p>We finished up CodeHS, and we did a few labs: Lab 1-Calculators, and Lab 2-Quiz Time. After that, we downloaded VSCode. </p>
+      <hr>
+      <h2>Week of Jan 15</h2>
+      <p>Mr. Jamieson was away, so we worked on our portfolios and on Game of Pig. We will start our RST this week.</p>
+      <hr>     
+    </div>
+    
   
-  </div>
-  <script>
-  function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
+    <script>
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
     }
-  }
-  </script>
-  
-<br>
-
-  <!--January Archive-->
-<center>
-  <button onclick="myFunction('jan')" class="w3-card-4 w3-btn" style="color: #ffedf9; width:170px; height:45px; background-color: rgba(171, 118, 207, 0.4); border-radius:35px; border: 2px solid rgba(218, 165, 255, 0.65)">January</button>
-</center>
-  <div id="jan" class="w3-container w3-hide">
-    <h2>Week of Jan 8</h2>
-    <p>We finished up CodeHS, and we did a few labs: Lab 1-Calculators, and Lab 2-Quiz Time. After that, we downloaded VSCode. </p>
-    <hr>
-    <h2>Week of Jan 15</h2>
-    <p>Mr. Jamieson was away, so we worked on our portfolios and on Game of Pig. We will start our RST this week.</p>
-    <hr>     
-  </div>
-  
-  </div>
-  <script>
-  function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  </script>
-  
-<br>
+    </script>
+    
+  <br>
+</div>
 
 </body>
   
